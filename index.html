@@ -42,6 +42,15 @@
             </li>
             <li><a class="header-list-item link" href="">Contacts</a></li>
           </ul>
+          <button
+            class="header-btn-open menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg class="header-socials-icon" width="32" height="22">
+              <use href="./images/icons.svg#icon-header-open"></use>
+            </svg>
+          </button>
         </nav>
         <address class="header-address">
           <ul class="header-list list">
@@ -133,26 +142,32 @@
           <ul class="portfolio-list list">
             <li class="portfolio-item">
               <img
+                srcset="./images/contact1.jpg 1x, ./images/contact1@2x.jpg 2x"
                 src="./images/contact1.jpg"
                 alt="monitor"
                 width="360"
                 height="300"
+                loading="lazy"
               />
             </li>
             <li class="portfolio-item">
               <img
+                srcset="./images/contact2.jpg 1x, ./images/contact2@2x.jpg 2x"
                 src="./images/contact2.jpg"
                 alt="screens phone"
                 width="360"
                 height="300"
+                loading="lazy"
               />
             </li>
             <li class="portfolio-item">
               <img
+                srcset="./images/contact3.jpg 1x, ./images/contact3@2x.jpg 2x"
                 src="./images/contact3.jpg"
                 alt="phone in hand"
                 width="360"
                 height="300"
+                loading="lazy"
               />
             </li>
           </ul>
@@ -164,10 +179,12 @@
           <ul class="contacts-list list">
             <li class="contacts-item">
               <img
+                srcset="./images/team1.jpg 1x, ./images/team1@2x.jpg 2x"
                 src="./images/team1.jpg"
                 alt="member of our team"
                 width="264"
                 height="260"
+                loading="lazy"
               />
               <div class="contacts-list-info">
                 <h3 class="section-sub-title">Mark Guerrero</h3>
@@ -206,10 +223,12 @@
             </li>
             <li class="contacts-item">
               <img
+                srcset="./images/team2.jpg 1x, ./images/team2@2x.jpg 2x"
                 src="./images/team2.jpg"
                 alt="member of our team"
                 width="264"
                 height="260"
+                loading="lazy"
               />
               <div class="contacts-list-info">
                 <h3 class="section-sub-title">Tom Ford</h3>
@@ -248,10 +267,12 @@
             </li>
             <li class="contacts-item">
               <img
+                srcset="./images/team3.jpg 1x, ./images/team3@2x.jpg 2x"
                 src="./images/team3.jpg"
                 alt="member of our team"
                 width="264"
                 height="260"
+                loading="lazy"
               />
               <div class="contacts-list-info">
                 <h3 class="section-sub-title">Camila Garcia</h3>
@@ -290,10 +311,12 @@
             </li>
             <li class="contacts-item">
               <img
+                srcset="./images/team4.jpg 1x, ./images/team4@2x.jpg 2x"
                 src="./images/team4.jpg"
                 alt="member of our team"
                 width="264"
                 height="260"
+                loading="lazy"
               />
               <div class="contacts-list-info">
                 <h3 class="section-sub-title">Daniel Wilson</h3>
@@ -456,7 +479,7 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="modal-btn" type="button" data-modal-close>
+        <button class="btn-close" type="button" data-modal-close>
           <svg class="social-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close-black"></use>
           </svg>
@@ -544,6 +567,59 @@
         </form>
       </div>
     </div>
-    <script src="./js/modal.js"></script>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="btn-close menu-toggle js-close-menu" type="button">
+        <svg class="social-icon" width="8" height="8">
+          <use href="./images/icons.svg#icon-close-black"></use>
+        </svg>
+      </button>
+      <ul class="mobile-list list">
+        <li>
+          <a
+            class="mobile-list-item mobile-list-item-active link"
+            href="./index.html"
+            >Studio</a
+          >
+        </li>
+        <li>
+          <a class="mobile-list-item link" href="./portfolio.html">Portfolio</a>
+        </li>
+        <li><a class="mobile-list-item link" href="">Contacts</a></li>
+      </ul>
+      <div class="mobile-bottom">
+        <ul class="mobile-address-list list">
+          <li>
+            <a class="tel link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+          </li>
+          <li>
+            <a class="link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="mobile-social icon-list list">
+          <li class="icon-list-item">
+            <a href="" class="icon-link">
+              <svg class="social-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="icon-list-item">
+            <a href="" class="icon-link">
+              <svg class="social-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="icon-list-item">
+            <a href="" class="icon-link">
+              <svg class="social-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook"></use></svg
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </body>
 </html>
