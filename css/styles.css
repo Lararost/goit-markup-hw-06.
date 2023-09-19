@@ -754,7 +754,9 @@ input:-webkit-autofill:active {
 .textarea:focus {
   border: 1px solid var(--corp-color);
 }
-
+.textarea:focus {
+  border-color: var(--corp-color);
+}
 .textarea::placeholder {
   font-size: inherit;
   line-height: inherit;
@@ -1042,6 +1044,10 @@ input:-webkit-autofill:active {
 @media screen and (min-width: 1158px) {
   .customers {
     padding: 120px 0;
+  }
+  .footer-wrap,
+  .container {
+    width: 584px;
   }
 }
 
